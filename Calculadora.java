@@ -401,6 +401,10 @@ public class Calculadora extends JFrame {
 
     public static float Division(float n1, float n2) {
         float division = n1 / n2;
+        if(n2==0 || division == 0){
+         JOptionPane.showMessageDialog(null, "La divisiòn entre 0 no es posible",
+               "-ERROR-",JOptionPane.ERROR_MESSAGE);
+        }
         return division;
     }
 
